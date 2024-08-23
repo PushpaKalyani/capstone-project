@@ -2,6 +2,7 @@ package com.controller;
 
 
 import java.util.List;
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ import com.service.DoctorService;
 
 
 	@RestController
-	@RequestMapping("/doctors1")
+	@RequestMapping("/doctors")
 	public class DoctorController {
 
 	   
