@@ -2,7 +2,8 @@ package com.controller;
 
 
 	import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -12,29 +13,29 @@ import com.service.PatientService;
 
 import jakarta.validation.Valid;
 
-import java.util.List;
+
 @Validated
 	@RestController
 	@RequestMapping("/patients")
 	public class PatientController {
 
 	    @Autowired
-	    private PatientService patientService;
+	     PatientService patientService;
 
 	    @PostMapping("/register")
 	    public ResponseEntity<Patient> register(@Valid @RequestBody Patient patient) {
 	        return ResponseEntity.ok(patientService.register(patient));
 	    }
 
-	    @PostMapping("/login")
-	    public ResponseEntity<Patient> login(@RequestParam String username, @RequestParam String password) {
-	        Patient patient = patientService.login(username, password);
+	   /* @PostMapping("/login")
+	    public ResponseEntity<Patient> login(@RequestParam String email, @RequestParam String password_hash) {
+	        Patient patient = patientService.login(email, password_hash);
 	        if (patient != null) {
 	            return ResponseEntity.ok(patient);
 	        } else {
 	            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
 	        }
-	    }
+	    }*/
 
 	   // @GetMapping("/doctors")
 	   // public ResponseEntity<List<Doctor>> getDoctorsBySpecialization(@RequestParam String specialization) {

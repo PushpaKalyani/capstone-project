@@ -2,8 +2,9 @@ package com.service;
 
 
 	import org.springframework.beans.factory.annotation.Autowired;
+
 	import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+
 
 import com.model.Patient;
 import com.repository.PatientRepository;
@@ -12,19 +13,19 @@ import com.repository.PatientRepository;
 	public class PatientService {
 
 	    @Autowired
-	    private PatientRepository patientRepository;
+	     PatientRepository patientRepository;
 
-	    @Autowired
-	    private RestTemplate restTemplate; // For communication with Doctor Service
+	   // @Autowired
+	   // private RestTemplate restTemplate; // For communication with Doctor Service
 
 	    public Patient register(Patient patient) {
 	        // Basic validation and password hashing
 	        return patientRepository.save(patient);
 	    }
 
-	    public Patient login(String username, String password) {
+	   // public Patient login(String email, String password_hash) {
 	        // Authentication logic
-	        return patientRepository.findByUsername(username);
+	       // return patientRepository.findByPatientId();
 	    }
 
 	   /* public List<Doctor> getDoctorsBySpecialization(String specialization) {
@@ -46,4 +47,4 @@ import com.repository.PatientRepository;
 }*/
 
 
-}
+

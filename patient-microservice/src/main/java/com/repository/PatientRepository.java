@@ -5,8 +5,8 @@ package com.repository;
 
 import com.model.Patient;
 
-	public interface PatientRepository extends JpaRepository<Patient, Long> {
-	    Patient findByUsername(String username);
+	public interface PatientRepository extends JpaRepository<Patient, String> {
+	    //Patient findById(String pati);
 	    Patient findByEmail(String email);
 	}
 
