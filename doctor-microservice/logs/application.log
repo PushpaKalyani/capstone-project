@@ -1,0 +1,382 @@
+2024-08-30T07:24:06.564+05:30  INFO 3056 --- [restartedMain] com.Main                                 : Starting Main using Java 17.0.7 with PID 3056 (C:\Users\HOME\capstone-project\doctor-microservice\target\classes started by HOME in C:\Users\HOME\capstone-project\doctor-microservice)
+2024-08-30T07:24:06.564+05:30  INFO 3056 --- [restartedMain] com.Main                                 : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T07:24:08.838+05:30  INFO 3056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T07:24:09.075+05:30  INFO 3056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 235 ms. Found 1 JPA repository interfaces.
+2024-08-30T07:24:09.132+05:30  INFO 3056 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e4b59674-a1b2-3b26-bb9a-3f95ae4a759b
+2024-08-30T07:24:09.220+05:30  INFO 3056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2024-08-30T07:24:09.221+05:30  INFO 3056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T07:24:09.222+05:30  INFO 3056 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-08-30T07:24:09.248+05:30  INFO 3056 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-08-30T07:24:09.248+05:30  INFO 3056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2680 ms
+2024-08-30T07:24:09.301+05:30  INFO 3056 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T07:24:09.315+05:30  INFO 3056 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-30T07:24:09.315+05:30  INFO 3056 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T07:24:09.316+05:30  INFO 3056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-08-30T07:24:09.358+05:30  INFO 3056 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@255e4eae
+2024-08-30T07:24:09.358+05:30  INFO 3056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-08-30T07:24:09.359+05:30  INFO 3056 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.MySQL8Dialect, version: 8.0
+2024-08-30T07:24:09.359+05:30  WARN 3056 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-30T07:24:09.372+05:30  INFO 3056 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-30T07:24:09.399+05:30  INFO 3056 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-30T07:24:09.426+05:30  INFO 3056 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T07:24:09.514+05:30  WARN 3056 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T07:24:09.698+05:30  INFO 3056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T07:24:09.793+05:30  INFO 3056 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-08-30T07:24:09.890+05:30  WARN 3056 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-30T07:24:09.903+05:30  INFO 3056 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-30T07:24:09.908+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-30T07:24:09.909+05:30  INFO 3056 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T07:24:09.912+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-30T07:24:09.912+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-30T07:24:09.912+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-30T07:24:09.912+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-30T07:24:09.912+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-30T07:24:09.912+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-30T07:24:09.912+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-30T07:24:09.934+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-30T07:24:09.935+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-08-30T07:24:09.936+05:30  INFO 3056 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-08-30T07:24:09.939+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1724982849939 with initial instances count: 3
+2024-08-30T07:24:09.941+05:30  INFO 3056 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DOCTOR-SERVICE with eureka with status UP
+2024-08-30T07:24:09.942+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1724982849942, current=UP, previous=STARTING]
+2024-08-30T07:24:09.942+05:30  INFO 3056 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001: registering service...
+2024-08-30T07:24:09.947+05:30  INFO 3056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2024-08-30T07:24:09.948+05:30  INFO 3056 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2024-08-30T07:24:09.963+05:30  INFO 3056 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001 - registration status: 204
+2024-08-30T07:24:10.046+05:30  INFO 3056 --- [restartedMain] com.Main                                 : Started Main in 3.666 seconds (process running for 2947.608)
+2024-08-30T07:24:10.048+05:30  INFO 3056 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-30T07:24:19.795+05:30  INFO 3056 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30T07:24:19.796+05:30  INFO 3056 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-30T07:24:19.798+05:30  INFO 3056 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-30T07:24:19.816+05:30 DEBUG 3056 --- [http-nio-9001-exec-1] org.hibernate.SQL                        : 
+    select
+        d1_0.doctor_id,
+        d1_0.available_days,
+        d1_0.full_name,
+        d1_0.specialization 
+    from
+        doctors2 d1_0 
+    where
+        d1_0.doctor_id=?
+2024-08-30T07:24:19.826+05:30  INFO 3056 --- [http-nio-9001-exec-1] com.controller.DoctorController          : method invocation started
+2024-08-30T07:29:09.921+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T07:34:09.930+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T07:39:09.936+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T07:44:09.947+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T07:46:10.950+05:30  INFO 3056 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-30T07:46:10.953+05:30  INFO 3056 --- [Thread-23] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DOCTOR-SERVICE with eureka with status DOWN
+2024-08-30T07:46:10.954+05:30  INFO 3056 --- [Thread-23] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1724984170954, current=DOWN, previous=UP]
+2024-08-30T07:46:10.955+05:30  INFO 3056 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001: registering service...
+2024-08-30T07:46:10.966+05:30  INFO 3056 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001 - registration status: 204
+2024-08-30T07:46:10.972+05:30  INFO 3056 --- [Thread-23] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-30T07:46:10.972+05:30  INFO 3056 --- [Thread-23] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-08-30T07:46:10.976+05:30  INFO 3056 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T07:46:10.977+05:30  INFO 3056 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-08-30T07:46:10.982+05:30  INFO 3056 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-08-30T07:46:10.983+05:30  INFO 3056 --- [Thread-23] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-08-30T07:46:13.987+05:30  INFO 3056 --- [Thread-23] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-08-30T07:46:13.994+05:30  INFO 3056 --- [Thread-23] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001 - deregister  status: 200
+2024-08-30T07:46:14.002+05:30  INFO 3056 --- [Thread-23] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-08-30T07:46:14.182+05:30  INFO 3056 --- [restartedMain] com.Main                                 : Starting Main using Java 17.0.7 with PID 3056 (C:\Users\HOME\capstone-project\doctor-microservice\target\classes started by HOME in C:\Users\HOME\capstone-project\doctor-microservice)
+2024-08-30T07:46:14.182+05:30  INFO 3056 --- [restartedMain] com.Main                                 : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T07:46:15.021+05:30  INFO 3056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T07:46:15.258+05:30  INFO 3056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 237 ms. Found 1 JPA repository interfaces.
+2024-08-30T07:46:15.290+05:30  INFO 3056 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e4b59674-a1b2-3b26-bb9a-3f95ae4a759b
+2024-08-30T07:46:15.336+05:30  INFO 3056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2024-08-30T07:46:15.336+05:30  INFO 3056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T07:46:15.336+05:30  INFO 3056 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-08-30T07:46:15.355+05:30  INFO 3056 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-08-30T07:46:15.356+05:30  INFO 3056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1171 ms
+2024-08-30T07:46:15.403+05:30  INFO 3056 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T07:46:15.419+05:30  INFO 3056 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-30T07:46:15.419+05:30  INFO 3056 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T07:46:15.419+05:30  INFO 3056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-08-30T07:46:15.433+05:30  INFO 3056 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6733900d
+2024-08-30T07:46:15.434+05:30  INFO 3056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-08-30T07:46:15.434+05:30  INFO 3056 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.MySQL8Dialect, version: 8.0
+2024-08-30T07:46:15.434+05:30  WARN 3056 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-30T07:46:15.446+05:30  INFO 3056 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-30T07:46:15.482+05:30  INFO 3056 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-30T07:46:15.497+05:30  INFO 3056 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T07:46:15.562+05:30  WARN 3056 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T07:46:15.701+05:30  INFO 3056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T07:46:15.790+05:30  INFO 3056 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-08-30T07:46:15.872+05:30  WARN 3056 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-30T07:46:15.877+05:30  INFO 3056 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-30T07:46:15.879+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-30T07:46:15.879+05:30  INFO 3056 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T07:46:15.881+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-30T07:46:15.881+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-30T07:46:15.881+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-30T07:46:15.881+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-30T07:46:15.881+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-30T07:46:15.881+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-30T07:46:15.881+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-30T07:46:15.899+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-30T07:46:15.900+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-08-30T07:46:15.901+05:30  INFO 3056 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-08-30T07:46:15.902+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1724984175902 with initial instances count: 3
+2024-08-30T07:46:15.903+05:30  INFO 3056 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DOCTOR-SERVICE with eureka with status UP
+2024-08-30T07:46:15.903+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1724984175903, current=UP, previous=STARTING]
+2024-08-30T07:46:15.903+05:30  INFO 3056 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001: registering service...
+2024-08-30T07:46:15.906+05:30  INFO 3056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2024-08-30T07:46:15.907+05:30  INFO 3056 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2024-08-30T07:46:15.916+05:30  INFO 3056 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001 - registration status: 204
+2024-08-30T07:46:15.981+05:30  INFO 3056 --- [restartedMain] com.Main                                 : Started Main in 1.902 seconds (process running for 4273.542)
+2024-08-30T07:46:15.983+05:30  INFO 3056 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-30T07:49:33.572+05:30  INFO 3056 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-30T07:49:33.572+05:30  INFO 3056 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-30T07:49:33.572+05:30  INFO 3056 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-30T07:49:33.604+05:30 DEBUG 3056 --- [http-nio-9001-exec-1] org.hibernate.SQL                        : 
+    select
+        d1_0.doctor_id,
+        d1_0.available_days,
+        d1_0.full_name,
+        d1_0.specialization 
+    from
+        doctors2 d1_0 
+    where
+        d1_0.doctor_id=?
+2024-08-30T07:49:33.604+05:30  INFO 3056 --- [http-nio-9001-exec-1] com.controller.DoctorController          : method invocation started
+2024-08-30T07:49:33.621+05:30  WARN 3056 --- [http-nio-9001-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.exception.CustomException: Doctor with ID 20 not found.]
+2024-08-30T07:51:15.892+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:01:24.286+05:30  WARN 3056 --- [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1h8m8s615ms990µs700ns).
+2024-08-30T09:02:24.183+05:30  WARN 3056 --- [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1m5s700ms95µs).
+2024-08-30T09:04:24.388+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:09:21.499+05:30 DEBUG 3056 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : 
+    select
+        d1_0.doctor_id,
+        d1_0.available_days,
+        d1_0.full_name,
+        d1_0.specialization 
+    from
+        doctors2 d1_0 
+    where
+        d1_0.doctor_id=?
+2024-08-30T09:09:21.533+05:30  INFO 3056 --- [http-nio-9001-exec-5] com.controller.DoctorController          : method invocation started
+2024-08-30T09:09:24.403+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:14:24.415+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:19:24.419+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:20:34.508+05:30  INFO 3056 --- [http-nio-9001-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 7830 ms
+2024-08-30T09:24:24.427+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:29:24.431+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:30:10.389+05:30 DEBUG 3056 --- [http-nio-9001-exec-10] org.hibernate.SQL                        : 
+    select
+        d1_0.doctor_id,
+        d1_0.available_days,
+        d1_0.full_name,
+        d1_0.specialization 
+    from
+        doctors2 d1_0 
+    where
+        d1_0.doctor_id=?
+2024-08-30T09:30:10.397+05:30  INFO 3056 --- [http-nio-9001-exec-10] com.controller.DoctorController          : method invocation started
+2024-08-30T09:34:24.447+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:39:24.459+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:42:47.116+05:30 DEBUG 3056 --- [http-nio-9001-exec-2] org.hibernate.SQL                        : 
+    select
+        d1_0.doctor_id,
+        d1_0.available_days,
+        d1_0.full_name,
+        d1_0.specialization 
+    from
+        doctors2 d1_0 
+    where
+        d1_0.doctor_id=?
+2024-08-30T09:42:47.154+05:30  INFO 3056 --- [http-nio-9001-exec-2] com.controller.DoctorController          : method invocation started
+2024-08-30T09:43:12.706+05:30 DEBUG 3056 --- [http-nio-9001-exec-5] org.hibernate.SQL                        : 
+    select
+        d1_0.doctor_id,
+        d1_0.available_days,
+        d1_0.full_name,
+        d1_0.specialization 
+    from
+        doctors2 d1_0 
+    where
+        d1_0.doctor_id=?
+2024-08-30T09:43:12.708+05:30  INFO 3056 --- [http-nio-9001-exec-5] com.controller.DoctorController          : method invocation started
+2024-08-30T09:43:35.966+05:30 DEBUG 3056 --- [http-nio-9001-exec-6] org.hibernate.SQL                        : 
+    select
+        d1_0.doctor_id,
+        d1_0.available_days,
+        d1_0.full_name,
+        d1_0.specialization 
+    from
+        doctors2 d1_0 
+    where
+        d1_0.doctor_id=?
+2024-08-30T09:43:35.976+05:30  INFO 3056 --- [http-nio-9001-exec-6] com.controller.DoctorController          : method invocation started
+2024-08-30T09:43:35.990+05:30  WARN 3056 --- [http-nio-9001-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.exception.CustomException: Doctor with ID 111 not found.]
+2024-08-30T09:44:24.468+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:49:24.479+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:50:42.297+05:30 DEBUG 3056 --- [http-nio-9001-exec-4] org.hibernate.SQL                        : 
+    select
+        d1_0.doctor_id,
+        d1_0.available_days,
+        d1_0.full_name,
+        d1_0.specialization 
+    from
+        doctors2 d1_0 
+    where
+        d1_0.doctor_id=?
+2024-08-30T09:50:42.305+05:30  INFO 3056 --- [http-nio-9001-exec-4] com.controller.DoctorController          : method invocation started
+2024-08-30T09:54:24.492+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T09:59:24.495+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:04:24.505+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:09:24.511+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:14:24.513+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:19:24.520+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:24:24.543+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:29:24.548+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:34:24.550+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:39:24.559+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:44:24.564+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:49:24.569+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:54:24.782+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T10:59:24.788+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:04:24.792+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:09:24.806+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:14:24.822+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:19:24.834+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:24:24.839+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:29:24.842+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:34:24.847+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:39:24.865+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:44:24.912+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:49:24.924+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:54:24.928+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T11:59:24.943+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:04:24.947+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:09:24.959+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:14:24.968+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:19:24.981+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:24:24.985+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:29:25.000+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:34:25.004+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:39:25.020+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:44:25.024+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:49:25.039+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:54:25.043+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T12:59:25.058+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:04:25.062+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:09:25.076+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:14:25.081+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:19:25.096+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:24:25.101+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:29:25.115+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:34:25.120+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:39:25.134+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:44:25.135+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:49:25.138+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:54:25.154+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T13:59:25.158+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:04:25.173+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:09:25.176+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:14:25.192+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:19:25.196+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:24:25.211+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:29:25.227+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:34:25.230+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:39:25.234+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:44:25.250+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:49:25.253+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:54:25.268+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T14:59:25.272+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:04:25.288+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:09:25.296+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:14:25.297+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:19:25.302+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:24:25.308+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:29:25.317+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:34:25.335+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:39:25.342+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:44:25.350+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:49:25.366+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:54:25.369+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T15:59:25.382+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:04:25.386+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:06:00.469+05:30  INFO 3056 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-30T16:06:00.497+05:30  INFO 3056 --- [Thread-29] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DOCTOR-SERVICE with eureka with status DOWN
+2024-08-30T16:06:00.500+05:30  INFO 3056 --- [Thread-29] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725014160500, current=DOWN, previous=UP]
+2024-08-30T16:06:00.506+05:30  INFO 3056 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001: registering service...
+2024-08-30T16:06:00.554+05:30  INFO 3056 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001 - registration status: 204
+2024-08-30T16:06:00.638+05:30  INFO 3056 --- [Thread-29] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-30T16:06:00.653+05:30  INFO 3056 --- [Thread-29] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-08-30T16:06:00.763+05:30  INFO 3056 --- [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T16:06:00.816+05:30  INFO 3056 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-08-30T16:06:00.824+05:30  INFO 3056 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-08-30T16:06:00.827+05:30  INFO 3056 --- [Thread-29] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-08-30T16:06:03.843+05:30  INFO 3056 --- [Thread-29] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-08-30T16:06:03.856+05:30  INFO 3056 --- [Thread-29] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001 - deregister  status: 200
+2024-08-30T16:06:03.902+05:30  INFO 3056 --- [Thread-29] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-08-30T16:06:04.605+05:30  INFO 3056 --- [restartedMain] com.Main                                 : Starting Main using Java 17.0.7 with PID 3056 (C:\Users\HOME\capstone-project\doctor-microservice\target\classes started by HOME in C:\Users\HOME\capstone-project\doctor-microservice)
+2024-08-30T16:06:04.606+05:30  INFO 3056 --- [restartedMain] com.Main                                 : No active profile set, falling back to 1 default profile: "default"
+2024-08-30T16:06:06.527+05:30  INFO 3056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-30T16:06:06.922+05:30  INFO 3056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 393 ms. Found 1 JPA repository interfaces.
+2024-08-30T16:06:06.994+05:30  INFO 3056 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e4b59674-a1b2-3b26-bb9a-3f95ae4a759b
+2024-08-30T16:06:07.151+05:30  INFO 3056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2024-08-30T16:06:07.152+05:30  INFO 3056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-30T16:06:07.152+05:30  INFO 3056 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-08-30T16:06:07.205+05:30  INFO 3056 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-08-30T16:06:07.205+05:30  INFO 3056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2593 ms
+2024-08-30T16:06:07.291+05:30  INFO 3056 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-30T16:06:07.314+05:30  INFO 3056 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-30T16:06:07.316+05:30  INFO 3056 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-30T16:06:07.318+05:30  INFO 3056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-08-30T16:06:07.347+05:30  INFO 3056 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d7645c5
+2024-08-30T16:06:07.347+05:30  INFO 3056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-08-30T16:06:07.351+05:30  INFO 3056 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.MySQL8Dialect, version: 8.0
+2024-08-30T16:06:07.351+05:30  WARN 3056 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-30T16:06:07.371+05:30  INFO 3056 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-08-30T16:06:07.421+05:30  INFO 3056 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-30T16:06:07.454+05:30  INFO 3056 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-30T16:06:07.573+05:30  WARN 3056 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-30T16:06:07.752+05:30  INFO 3056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-30T16:06:07.845+05:30  INFO 3056 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-08-30T16:06:07.949+05:30  WARN 3056 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-08-30T16:06:07.958+05:30  INFO 3056 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-08-30T16:06:07.961+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-08-30T16:06:07.962+05:30  INFO 3056 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:06:07.964+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-08-30T16:06:07.964+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-08-30T16:06:07.964+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-08-30T16:06:07.964+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-08-30T16:06:07.964+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-08-30T16:06:07.964+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-08-30T16:06:07.964+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-08-30T16:06:07.978+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-08-30T16:06:07.979+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-08-30T16:06:07.980+05:30  INFO 3056 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-08-30T16:06:07.980+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1725014167980 with initial instances count: 3
+2024-08-30T16:06:07.982+05:30  INFO 3056 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DOCTOR-SERVICE with eureka with status UP
+2024-08-30T16:06:07.982+05:30  INFO 3056 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725014167982, current=UP, previous=STARTING]
+2024-08-30T16:06:07.983+05:30  INFO 3056 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001: registering service...
+2024-08-30T16:06:07.995+05:30  INFO 3056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2024-08-30T16:06:07.995+05:30  INFO 3056 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2024-08-30T16:06:08.009+05:30  INFO 3056 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DOCTOR-SERVICE/DESKTOP-OD9OT2M:doctor-service:9001 - registration status: 204
+2024-08-30T16:06:08.079+05:30  INFO 3056 --- [restartedMain] com.Main                                 : Started Main in 3.63 seconds (process running for 34271.445)
+2024-08-30T16:06:08.080+05:30  INFO 3056 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-30T16:11:07.968+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:16:07.974+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:21:07.982+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:26:07.983+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:31:07.991+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:36:08.003+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:41:08.012+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:46:08.016+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:51:08.029+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T16:56:08.041+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:01:08.051+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:06:08.058+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:11:08.065+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:16:08.081+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:21:08.088+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:26:08.105+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:31:08.127+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:36:08.130+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:41:08.137+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:46:08.146+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:51:08.153+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T17:56:08.162+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-08-30T18:48:07.096+05:30  WARN 3056 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=49m3s391ms786µs900ns).
+2024-08-30T18:49:35.696+05:30  INFO 3056 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

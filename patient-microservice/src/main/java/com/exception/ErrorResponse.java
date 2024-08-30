@@ -1,8 +1,7 @@
 package com.exception;
 
-
-
-	public class ErrorResponse {
+public class ErrorResponse {
+	
 		private int status;
 	    private String message;
 		public int getStatus() {

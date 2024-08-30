@@ -15,7 +15,6 @@ import jakarta.validation.constraints.NotEmpty;
 
 	    @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	    
 	    private int doctor_id;
 	    @NotEmpty(message="full_name not provided")
 		@Column(name="full_name")
@@ -23,8 +22,7 @@ import jakarta.validation.constraints.NotEmpty;
 	    @NotEmpty(message="specialization not provided")
 		@Column(name="specialization")
 	    private String specialization;
-	    @NotEmpty(message="available_days not provided")
-		@Column(name="available_days")
+        
 	    private String available_days;
         
 		public int getDoctor_id() {

@@ -6,29 +6,39 @@ package com.model;
 
 import java.sql.Date;
 
+
 import jakarta.persistence.Column;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "patients")
+@Table(name = "patients1")
+
 	public class Patient {
 	    @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    
 	    private int patient_id;
 
-	    @Column(name="patientname")
-	    private String patient_name ;
+	    @Column(name="patient_name")
+	    private String patient_name;
+	    @Column(name="password_hash")
+	    private String password_hash;
+	    private String email;
+        private String gender;
+	    @Column(name="date_of_birth")
+	    private Date date_of_birth;
+	    
+	    private String phone_number;
+	    
+	    
 
-	    public int getPatient_id() {
-			return patient_id;
-		}
-		public void setPatient_id(int patient_id) {
-			this.patient_id = patient_id;
-		}
+	    
 		public String getPatient_name() {
 			return patient_name;
 		}
@@ -65,24 +75,15 @@ import jakarta.persistence.Table;
 		public void setPhone_number(String phone_number) {
 			this.phone_number = phone_number;
 		}
-		@Column(name="passwordhash")
-	    private String password_hash;
-
-	    @Column(name="email")
-	    private String email;
-
-	    @Column(name="gender")
-	    private String gender;
-	    
-	    private Date date_of_birth;
-	    @Column()
-	    private String phone_number;
+		public Patient() {
+			super();}
+		
 	    // Getters and Setters
 
-		public Patient(int patient_id, String patient_name, String password_hash, String email, String gender,
+		public Patient( String patient_name, String password_hash, String email, String gender,
 				Date date_of_birth, String phone_number) {
 			super();
-			this.patient_id = patient_id;
+		
 			this.patient_name = patient_name;
 			this.password_hash = password_hash;
 			this.email = email;
@@ -90,9 +91,9 @@ import jakarta.persistence.Table;
 			this.date_of_birth = date_of_birth;
 			this.phone_number = phone_number;
 		}
-		public Patient() {
-			super();
-	}
+		
+		 
+		
 }
 
 
